@@ -459,3 +459,40 @@ td img{
     border-radius: 10px;
 }
 
+.progress{
+    margin: 20px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #343434 linear-gradient(to right, transparent 50%, var(--clr) 0);
+}
+.progress::before{
+    content: '';
+    display: block;
+    height: 100%;           
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+    
+}
+.progress::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    border-radius: 50%;
+    background: #222;
+}
+.progress::before{
+    background: var(--clr);
+    transform: rotate(calc(((var(--i) - 50) * 0.01turn )));
+}
+
+.con-2-history-img{
+    width: 40%;
+    height: 35vh;
+}
+.con-2-history-img img{
+    width: 100%;
+    height: 34vh;
+}
