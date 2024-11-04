@@ -110,7 +110,19 @@ body{
     font-size: 24px;
     color: rgb(215, 213, 209);
     font-weight: 300;
-}    
+}   
+.notific-count{
+    width: 30px;
+    height: 30px;
+    padding: 2px 8px;
+    background: rgb(168, 50, 26);
+    position: absolute;
+    right: 50px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
 .side-nav ul li:hover{
 background: rgb(54, 52, 52);
 letter-spacing: 5px;
